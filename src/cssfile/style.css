@@ -1,0 +1,398 @@
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+
+}
+.split-container {
+  display: flex;
+  height: 80vh;
+}
+
+.left {
+  width: 20%;
+  background-color: white;
+  padding-top:10px;
+}
+.right{
+  width: 20%;
+  background-color: white;
+  padding-top:10px;
+}
+.middle {
+  width: 60%;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.left-menu {
+  width: auto;
+  height: auto;
+  background-color: #fe8639;
+}
+
+.right-side{
+  width: auto;
+  height: auto;
+}
+.right-side img{
+  width: 270px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.field{
+  min-width:250px;
+  color: blue;
+}
+.fieldValue{
+  width: auto;
+  color: blue;
+
+}
+.statement{
+  width: 100%;
+}
+.statement .statement-info{
+  margin-bottom:20px;
+  margin-left: 50px;
+}
+.statement-info p{
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+  padding: 10px;
+  color: blue;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+td a{
+  text-decoration: none;
+  color:blue;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+td:hover {
+  background-color: #555;
+}
+/* 
+.profile {
+  margin:auto;
+  width: 100%;
+
+} */
+
+/* Styles for the table */
+
+.profile table {
+  width: auto;
+  min-width: 500px;
+  border-collapse: collapse;
+  margin-top:auto;
+}
+a{
+  text-decoration: none;
+}
+
+.tabulator .tabulator-header {
+  font-weight: normal;
+  width: auto;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  height: 48px;
+  width: auto;
+  border: none;
+  padding: 0 7px;
+}
+
+.tabulator-row {
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+  min-height: 48px;
+  vertical-align: middle;
+}
+
+.tabulator-row .tabulator-cell {
+  width: 500px;
+}
+
+.tabulator-row .tabulator-cell:first-of-type,
+.tabulator .tabulator-header .tabulator-col:first-of-type {
+  padding-left: 24px;
+}
+
+.tabulator-row.tabulator-row-even {
+  background-color: #ffffff;
+}
+
+.credit-card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-image: url('/src/image/card-background.jpg');
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chip {
+  position: absolute;
+  top: 15%;
+  left: 20px;
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(45deg, #a5a5a5, #dbdbdb);
+  border-radius: 8px;
+}
+.container-main{
+  width: 100%;
+  padding:5px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.number {
+  font-size: 1.5em;
+  margin-top: 55px;
+  margin-left: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-holder,
+.expiry-date {
+  flex: 3;
+  font-size: 0.8em;
+}
+
+.card-holder,
+.cvv,
+label {
+  font-size: 0.8em;
+  color: #fff;
+}
+.logo{
+  color: orange;
+  font-size:15px;
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  width: 50px;
+  height: 35px;
+
+}
+.logo span{
+  color: white;
+}
+
+.name,
+.date,
+.cvv-pin {
+  font-size: 0.8em;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.info-account {
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Funds Transfer Styles */
+/* App.css */
+.container-funds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width:500px;
+  padding: 10px;
+  height: auto;
+  margin: 0 auto;
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-funds h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width:400px;
+}
+
+.container-funds label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.container-funds input[type="text"], input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.container-funds button[type="submit"] {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  background-color: #0b7dda;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.container-funds button[type="submit"]:hover {
+  background-color: #3f9ce9;
+}
+
+.header {
+  background-color:#fe8639;
+  color: #fff;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo Styles */
+h1{
+  margin-top: auto;
+  margin-bottom:auto; 
+  color: white;
+  font-size: 40px;
+}
+
+.smallLatter {
+  color: white;
+}
+
+.capitalLatter {
+  color: white;
+}
+.Blogo{
+  font-size:60px;
+  font-family:'Playfair Display', serif;
+  color: white;
+}
+
+/* Menu Styles */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Auth Links Styles */
+.auth-links a {
+  color: #fff;
+  text-decoration: none;
+  background-color:blue;
+  margin-left: 20px;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.login-btn, .signup-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: blue;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: blue;
+}
+
+.signup-btn {
+  background-color: blue;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #0b7dda;
+}
+.container-view{
+  max-width:500px;
+  width: 90%;
+  height: 250px;
+  padding:5px;
+  background-color:gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.time{
+  font-size:10px;
+}
+.tabulator{
+  width: 95%;
+  height: auto;
+}
