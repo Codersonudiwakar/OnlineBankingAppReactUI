@@ -16,7 +16,7 @@ const  HomePage =() =>  {
      <div className='home'>
        <main>
         <section className="hero">
-          <h1>Welcome to Our Bank</h1>
+          <h1>Welcome to Bank of City</h1>
           <p>Your trusted partner for all your financial needs.</p>
           {/* <a href="#" className="btn">Learn More</a> */}
         </section>

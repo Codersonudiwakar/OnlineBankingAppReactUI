@@ -41,13 +41,7 @@
 .right-side img{
   width: 270px;
 }
-
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+  
 .field{
   min-width:250px;
   color: blue;
@@ -140,6 +134,22 @@ a{
 .tabulator-row.tabulator-row-even {
   background-color: #ffffff;
 }
+@media (max-width:768px) {
+  .profile {
+    margin:auto;
+    width:90%;
+  
+  }
+  .profile table {
+    width:200px;
+    border-collapse: collapse;
+    margin-top:auto;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
 
 .credit-card {
   position: relative;
@@ -395,4 +405,100 @@ h1{
 .tabulator{
   width: 95%;
   height: auto;
+}
+
+/* General Responsive Styles */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left, .right, .middle {
+    width: 100%;
+  }
+
+  .left-menu, .right-side {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side img {
+    width: 100%;
+    
+  }
+
+  .header {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .auth-links {
+    margin-top: 10px;
+  }
+
+  .auth-links a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+/* Responsive Styles for Funds Transfer Container */
+@media (max-width: 768px) {
+
+  .container-main{
+    width: 90%;
+    padding:5px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-funds {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .container-funds input[type="text"],
+  .container-funds input[type="number"],
+  .container-funds button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for Credit Card */
+@media (max-width: 480px) {
+  .credit-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Responsive Styles for Table */
+@media (max-width: 768px) {
+  .tabulator {
+    width: 100%;
+    overflow-x: auto;
+  }
 }

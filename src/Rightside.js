@@ -11,7 +11,6 @@ function Rightside() {
       <div className="right-side">
         <Card
   style={{
-    width: '18rem'
   }}
 >
   <img
