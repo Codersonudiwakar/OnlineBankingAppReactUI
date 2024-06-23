@@ -30,6 +30,8 @@ const DebitCard = () => {
               'Authorization': `Bearer ${token}`
             }
           });
+
+            
           const responseData = response.data; // Assuming response is in JSON format
           console.log("Data received:", responseData);
           setCardData(responseData);
